@@ -1,5 +1,7 @@
 import React from 'react'
 import Container from './Container'
+import { FaChevronDown, FaPhoneAlt } from 'react-icons/fa'
+import { AiTwotoneMail } from 'react-icons/ai'
 
 const TopNav = () => {
   return (
@@ -9,15 +11,15 @@ const TopNav = () => {
     <Container>
     <div className='flex justify-between'>
     <div className='grid-cols-4 flex gap-8'>
-        <h5> ahnaf.ent@gmail.com </h5>
-        <h5>01689940198</h5>
+        <h5 className='flex items-center gap-2 text-white font-josefin'><AiTwotoneMail className='text-white'/>mhhasanul@gmail.com</h5>
+        <h5 className='flex items-center gap-2 text-white font-josefin'><FaPhoneAlt className='text-white'/>(12345)67890</h5>
     </div>
     <div className='grid-cols-8'>
-        <ul className='flex gap-3'>
-            <li>English</li>
-            <li>USd</li>
-            <li>Login</li>
-            <li>Wishlist</li>
+        <ul className='flex gap-3 items-center'>
+            <li className=' text-white font-josefin'>English</li>
+            <li className='flex items-center gap-2  text-white font-josefin'>USd<FaChevronDown/></li>
+            <li className='flex items-center gap-2 text-white font-josefin'>Login<FaChevronDown/></li>
+            <li className='flex items-center gap-2 text-white font-josefin'>Wishlist<FaChevronDown/></li>
         </ul>
     </div>
     </div>
