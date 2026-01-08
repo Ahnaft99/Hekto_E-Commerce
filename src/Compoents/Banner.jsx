@@ -18,8 +18,12 @@ const Banner = () => {
                 <h4 className='font-lato text-[#FB2E86] text-[16px] font-bold'>Best Furniture For Your Castle....</h4>
                 <h2 className='text-[38px] font-bold font-josefin'>New Furniture Collection 
                 Trends in 2020</h2>
-                <p className='text-[#8A8FB9] text-[16px] font-bold font-lato'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
+                <p className='text-[#8A8FB9] text-[16px] font-bold font-lato py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
                 in phasellus non in justo.</p>
+
+              <div className='pt-10'>
+              <button className='border bg-[#FB2E86] text-white font-josefin font-semibold px-4 py-2' type='submit'>Shop Now</button>
+              </div>
                 </div>
          
             <div className='w-6/12'>

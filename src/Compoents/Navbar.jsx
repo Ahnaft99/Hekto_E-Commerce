@@ -7,7 +7,7 @@ const Navbar = () => {
  const [menu, setMenu] = useState(false)
 
  return (
- <div>
+ <div className='pb-3'>
  <Container>
  <div className="grid grid-cols-2 lg:grid-cols-3 items-center mt-2 relative"> 
 
