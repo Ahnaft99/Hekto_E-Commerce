@@ -9,17 +9,15 @@ const Navbar = () => {
  return (
  <div>
  <Container>
-        {/* **Responsive Fix:** Changed grid-cols-3 to grid-cols-2 for mobile layout */}
  <div className="grid grid-cols-2 lg:grid-cols-3 items-center mt-2 relative"> 
 
  {/* Logo */}
  <div>
- <img src={Hekto} alt="Logo" className="max-w-[100px] sm:max-w-full" />
+ <img src={Hekto} alt="Logo" className="max-w-25 sm:max-w-full" />
  </div>
 
- {/* Desktop Menu (Hidden on sm/md) */}
  <div className="hidden lg:flex justify-center">
- <ul className="flex gap-4 items-center"> {/* Changed grid-cols-6 to flex for better desktop spacing */}
+ <ul className="flex gap-4 items-center"> 
  <li className="font-josefin text-[16px] hover:text-red-500 transition cursor-pointer flex items-center gap-1.5 group">
  Home
  <FaChevronDown className="opacity-0 group-hover:opacity-100 transition text-[14px]" />
