@@ -1,5 +1,6 @@
 import Banner from "./Compoents/Banner"
 import FeatureProduct from "./Compoents/FeatureProduct"
+import LatestProduct from "./Compoents/LatestProduct"
 import Navbar from "./Compoents/Navbar"
 import TopNav from "./Compoents/TopNav"
 
@@ -13,6 +14,7 @@ function App() {
    <Navbar/>
    <Banner/>
    <FeatureProduct/>
+   <LatestProduct/>
     </>
   )
 }

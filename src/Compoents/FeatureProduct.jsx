@@ -3,7 +3,6 @@ import Container from "../Compoents/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "./Slice/ProductSlice";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CiHeart, CiShoppingCart, CiZoomIn } from "react-icons/ci";
