@@ -70,28 +70,42 @@ const FeatureProduct = () => {
 <div className="mt-8">
   <Slider {...settings}>
     {data?.slice(1, 9).map((product) => (
-      <div key={product.id} className="px-4">
-        <div className="border-2 border-black hover:border-blue-800 transition duration-300 ease-in-out relative group">
-          <img
-            src={product.thumbnail}
-            alt={product.title}
-            className="w-full h-64 md:h-52 sm:h-40 object-cover"
-          />
-          <div className="z-10 ml-2 flex absolute top-2 gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl md:text-lg sm:text-base">
-            <CiShoppingCart />
-            <CiHeart />
-            <CiZoomIn />
-          </div>
-          <div className="transition duration-400 ease-in-out group-hover:bg-blue-800 p-4">
-            <h1 className="text-center pt-2 font-lato text-[#FB2E86] group-hover:text-white text-lg md:text-base sm:text-sm transition duration-300">
-              {product.title}
-            </h1>
-            <h2 className="text-center pt-1 group-hover:text-white text-md md:text-sm sm:text-xs transition duration-300">
-              ${product.price}
-            </h2>
-          </div>
-        </div>
-      </div>
+   <div key={product.id} className="px-4 h-full">
+   <div className="border-2 border-black hover:border-blue-800 transition duration-300 ease-in-out relative group h-full flex flex-col">
+ 
+     {/* IMAGE */}
+     <div className="w-full h-64 md:h-52 sm:h-44 overflow-hidden">
+       <img
+         src={product.thumbnail}
+         alt={product.title}
+         className="w-full h-full object-cover"
+       />
+     </div>
+ 
+     {/* ICONS */}
+     <div className="z-10 ml-2 flex absolute top-2 gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl md:text-lg sm:text-base">
+       <CiShoppingCart />
+       <CiHeart />
+       <CiZoomIn />
+     </div>
+ 
+     {/* CONTENT */}
+     <div className="flex flex-col flex-grow transition duration-300 ease-in-out group-hover:bg-blue-800 p-4">
+ 
+       {/* TITLE (FIXED HEIGHT) */}
+       <h1 className="text-center font-lato text-[#FB2E86] group-hover:text-white text-lg md:text-base sm:text-sm line-clamp-2 min-h-[3rem]">
+         {product.title}
+       </h1>
+ 
+       {/* PRICE ALWAYS AT BOTTOM */}
+       <h2 className="text-center mt-auto pt-2 group-hover:text-white text-md md:text-sm sm:text-xs">
+         ${product.price}
+       </h2>
+ 
+     </div>
+   </div>
+ </div>
+ 
     ))}
   </Slider>
 </div>
