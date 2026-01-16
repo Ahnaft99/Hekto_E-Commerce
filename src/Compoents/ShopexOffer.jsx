@@ -10,57 +10,40 @@ const ShopexOffer = () => {
         <div className='py-20'>
             <Container>
                 <div>
-                    <h2 className='font-josefin font-bold text-[42px] text-center'>What Shopex Offer!</h2>
-                </div>
-                <div className="grid grid-cols-4 gap-4 pt-20">
-                    <div className="bg-white shadow">
-                        <div className=" flex justify-center items-center  pt-8">
-                            <img className="h-16 w-16" src={freeDelivery} alt="freeDelivery" />
-                        </div>
-                        <div>
-                            <h2 className='font-josefin font-bold text-center'>24/7 Support</h2>
-                            <p className='font-lato font-bold text-[#1A0B5B4D] text-center py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
-                        </div>
-
-                    </div>
-                    <div className="">
-                    <div className="bg-white shadow">
-                        <div className=" flex justify-center items-center  pt-8">
-                            <img className="h-16 w-16" src={cashBack} alt="cashBack" />
-                        </div>
-                        <div>
-                            <h2 className='font-josefin font-bold text-center'>24/7 Support</h2>
-                            <p className='font-lato font-bold text-[#1A0B5B4D] text-center py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
-                        </div>
-
-                    </div>
-                    </div>
-                    <div className="">
-                    <div className="bg-white shadow">
-                        <div className=" flex justify-center items-center  pt-8">
-                            <img className="h-16 w-16" src={premium} alt="premium" />
-                        </div>
-                        <div>
-                            <h2 className='font-josefin font-bold text-center'>24/7 Support</h2>
-                            <p className='font-lato font-bold text-[#1A0B5B4D] text-center py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
-                        </div>
-
-                    </div>
-                    </div>
-                    <div className="">
-                    <div className="bg-white shadow">
-                        <div className=" flex justify-center items-center  pt-8">
-                            <img className="h-16 w-16" src={hours} alt="24hours" />
-                        </div>
-                        <div>
-                            <h2 className='font-josefin font-bold text-center'>24/7 Support</h2>
-                            <p className='font-lato font-bold text-[#1A0B5B4D] text-center py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
-                        </div>
-
-                    </div>
-                    </div>
+                    <h2 className='font-josefin font-bold text-[42px] text-center sm:text-3xl md:text-4xl lg:text-[42px]'>
+                        What Shopex Offer!
+                    </h2>
                 </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
+                    {/* Card 1 */}
+                    <div className="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                        <img className="h-16 w-16 mb-4" src={freeDelivery} alt="freeDelivery" />
+                        <h2 className='font-josefin font-bold mb-2'>24/7 Support</h2>
+                        <p className='font-lato text-[#1A0B5B4D]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                        <img className="h-16 w-16 mb-4" src={cashBack} alt="cashBack" />
+                        <h2 className='font-josefin font-bold mb-2'>Cash Back</h2>
+                        <p className='font-lato text-[#1A0B5B4D]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                        <img className="h-16 w-16 mb-4" src={premium} alt="premium" />
+                        <h2 className='font-josefin font-bold mb-2'>Premium Quality</h2>
+                        <p className='font-lato text-[#1A0B5B4D]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div className="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                        <img className="h-16 w-16 mb-4" src={hours} alt="24hours" />
+                        <h2 className='font-josefin font-bold mb-2'>Fast Delivery</h2>
+                        <p className='font-lato text-[#1A0B5B4D]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                    </div>
+                </div>
             </Container>
         </div>
     )
