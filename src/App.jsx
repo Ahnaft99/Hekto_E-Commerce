@@ -4,6 +4,7 @@ import LatestProduct from "./Compoents/LatestProduct"
 import Navbar from "./Compoents/Navbar"
 import ShopexOffer from "./Compoents/ShopexOffer"
 import TopNav from "./Compoents/TopNav"
+import UniqueOffer from "./Compoents/UniqueOffer"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
    <FeatureProduct/>
    <LatestProduct/>
    <ShopexOffer/>
+   <UniqueOffer/>
     </>
   )
 }
