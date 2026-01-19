@@ -92,7 +92,7 @@ const LatestProduct = () => {
               {data?.slice(0, 6).map(product => (
                 <div
                   key={product.id}
-                  className="w-60 border rounded-lg p-4 text-center shadow-md hover:shadow-xl transition"
+                  className="w-[320px] border rounded-lg p-4 text-center shadow-md hover:shadow-xl transition"
                 >
                   <img
                     src={product.thumbnail}

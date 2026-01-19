@@ -22,7 +22,7 @@ const UniqueOffer = () => {
       </h2>
 
       <ol className="list-none space-y-4 mt-6">
-        <li className="flex items-center text-[#ACABC3] font-lato font-medium">
+        <li className="flex items-center text-[#ACABC3] font-lato font-medium ">
           <span className="h-4 w-4 rounded-full bg-red-500 inline-block mr-3"></span>
           All frames constructed with hardwood solids and laminates
         </li>
