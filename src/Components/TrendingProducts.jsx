@@ -1,4 +1,4 @@
-import Container from "../Compoents/Container";
+import Container from "../Components/Container";
 import React, { useEffect } from "react";
 import bag from "../assets/bag.png";
 import { useDispatch, useSelector } from "react-redux";

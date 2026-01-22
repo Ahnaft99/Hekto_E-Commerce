@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from "../Compoents/Container"
+import Container from "../Components/Container"
 import freeDelivery from '../assets/freeDelivery.png'
 import cashBack from '../assets/cashBack.png'
 import premium from '../assets/premium.png'

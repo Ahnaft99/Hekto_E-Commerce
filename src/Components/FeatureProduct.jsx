@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Container from "../Compoents/Container";
+import Container from "../Components/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "./Slice/ProductSlice";
 import Slider from "react-slick";
