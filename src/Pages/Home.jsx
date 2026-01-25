@@ -8,6 +8,7 @@ import ShopexOffer from "../Components/ShopexOffer"
 import UniqueOffer from "../Components/UniqueOffer"
 import TrendingProducts from "../Components/TrendingProducts"
 import Discount from "../Components/Discount"
+import TopCatagories from '../Components/TopCatagories'
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <UniqueOffer/>
       <TrendingProducts/>
       <Discount/>
+      <TopCatagories/>
     </div>
   )
 }
