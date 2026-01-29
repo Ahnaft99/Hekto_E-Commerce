@@ -11,6 +11,7 @@ import Discount from "../Components/Discount"
 import TopCatagories from '../Components/TopCatagories'
 import NewsLetter from '../Components/NewsLetter'
 import LatestBlog from '../Components/LatestBlog'
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
       <TopCatagories/>
       <NewsLetter/>
       <LatestBlog/>
+      <Footer/>
     </div>
   )
 }
