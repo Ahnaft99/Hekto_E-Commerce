@@ -9,14 +9,14 @@ function Product() {
       <TopNav />
       <Navbar />
 
-      {/* Page Header */}
+    
       <div className="bg-[#F6F5FF] py-14">
         <Container>
           <h1 className="font-josefin text-[36px] font-bold text-[#101750]">
             Product Items
           </h1>
 
-          {/* Breadcrumb */}
+          
           <div className="flex items-center gap-2 mt-2 text-[14px] font-josefin">
             <Link to="/" className="hover:text-[#FB2E86] transition">
               Home
@@ -31,11 +31,11 @@ function Product() {
         </Container>
       </div>
 
-      {/* Main Content */}
+    
       <Container>
         <div className="flex flex-col lg:flex-row gap-8 py-14">
 
-          {/* Left Sidebar */}
+      
           <aside className="w-full lg:w-3/12 bg-white p-6 border rounded-md shadow-sm">
             <h2 className="font-josefin text-[20px] font-semibold mb-4">
               Filters
@@ -57,10 +57,10 @@ function Product() {
             </ul>
           </aside>
 
-          {/* Product Grid */}
+         
           <section className="w-full lg:w-9/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {/* Product Card */}
+           
             {[1,2,3,4,5,6].map((item) => (
               <div
                 key={item}
